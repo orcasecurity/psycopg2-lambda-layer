@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: psycopg2-lambda-layer
+  description: psycopg2 Lambda Layer
+  labels:
+    orca.security/is-production: "true"
+    orca.security/repo-is-fork: "true"
+    orca.security/repo-visibility: public
+  annotations:
+    github.com/project-slug: orcasecurity/psycopg2-lambda-layer
+    github.com/team-slug: orcasecurity/orca-cloud-platform
+    orca.security/jira-project-key: CLD
+    orca.security/jira-project-name: Cloud Platform
+    orca.security/repo-created-at: "2021-12-14T09:09:10Z"
+    orca.security/repo-default-branch: master
+    orca.security/repo-main-language: Shell
+  links:
+    - url: https://github.com/orcasecurity/psycopg2-lambda-layer
+      title: Source Code
+      icon: github
+      type: url
+    - url: https://orcasecurity.atlassian.net/jira/software/c/projects/CLD/boards/254
+      title: Jira
+      icon: grading
+      type: url
+spec:
+  type: repository
+  lifecycle: production
+  owner: orca-cloud-platform
